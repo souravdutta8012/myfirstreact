@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 
 function CounterHook() {
-
-    const [count, setCount] = useState(0)
+    const initialCount = 0
+    const [count, setCount] = useState(initialCount)
 
     return (
         <div>
-            <button onClick={() => setCount(count + 1)}>Count {count}</button>
+            Count: {count}
+            <button onClick={() => setCount(initialCount)}>Reset</button>
+            <button onClick={() => setCount(prevCount => prevCount + 1)}>Incremet</button>
+            <button onClick={() => setCount(prevCount => prevCount - 1)}>Decrement</button>
         </div>
     )
 }
