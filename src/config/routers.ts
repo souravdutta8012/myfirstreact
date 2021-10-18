@@ -14,6 +14,12 @@ const routers: IRouter[] = [
         name: 'About page',
         component: AboutPage,
         exact: true
+    },
+    {
+        path: '/about/:number',
+        name: 'About page',
+        component: AboutPage,
+        exact: true
     }
 ]
 
