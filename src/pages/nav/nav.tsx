@@ -1,9 +1,15 @@
 import React from "react";
 import "./nav.css";
+import { AiOutlineMenu } from 'react-icons/ai'
 
 const NavBar: React.FunctionComponent = props => {
     return (
-        <p className='body'>This is the nav bar!</p>
+        <div className='body'>
+            <AiOutlineMenu size={20} />
+            <span className='app-name'>
+                IMS
+            </span>
+        </div>
     )
 }
 
