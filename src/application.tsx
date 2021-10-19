@@ -4,6 +4,7 @@ import logging from "./config/logging";
 import routers from "./config/routers";
 import "./application.css";
 import 'typeface-roboto';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Application: React.FunctionComponent<{}> = props => {
     useEffect(() => {
