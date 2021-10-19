@@ -1,6 +1,6 @@
 .content {
     background-color: #004869;
-    color: white;
+    color: #F5F5F6;
     padding: 10px 20px;
     margin: 0;
 }
@@ -18,15 +18,20 @@
     margin-right: 10px;
     background-color: #00354D !important;
     border: none !important;
+    box-shadow: none !important;
 }
 
 .training-btn {
+    background-color: #004869 !important;
     border: none !important;
+    box-shadow: none !important;
 }
 
 .input-field {
     background-color: #00354D !important;
     border: none !important;
+    box-shadow: none !important;
+    color: #F5F5F6 !important;
 }
 
 .align-right {
