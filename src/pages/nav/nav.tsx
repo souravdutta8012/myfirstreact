@@ -29,7 +29,7 @@ const NavBar: React.FunctionComponent = props => {
                     <Col className='col-4'>
                         <InputGroup>
                             <FormControl className='input-field' placeholder="Search Incident" aria-label="Amount (to the nearest dollar)" />
-                            <InputGroup.Text className='input-field'><BiSearch size={20} color="#84C1DC" /></InputGroup.Text>
+                            <InputGroup.Text className='input-field'><BiSearch size={25} color="#84C1DC" /></InputGroup.Text>
                         </InputGroup>
                     </Col>
                     <Col className='col-2 align-right'>
