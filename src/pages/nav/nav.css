@@ -1,15 +1,40 @@
-.body {
+.content {
     background-color: #004869;
     color: white;
-    padding: 15px 20px;
+    padding: 10px 20px;
     margin: 0;
 }
 
-.content {
+.allign {
     display: flex;
     align-items: center;
 }
 
 .app-name {
     padding-left: 20px;
+}
+
+.live-btn {
+    margin-right: 10px;
+    background-color: #00354D !important;
+    border: none !important;
+}
+
+.training-btn {
+    border: none !important;
+}
+
+.input-field {
+    background-color: #00354D !important;
+    border: none !important;
+}
+
+.align-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.align-middle {
+    display: flex;
+    justify-content: space-between;
 }
