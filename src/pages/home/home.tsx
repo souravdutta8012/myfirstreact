@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import IPage from "../interfaces/page";
-import logging from "../config/logging";
-import NavBar from "./nav";
+import IPage from "../../interfaces/page";
+import logging from "../../config/logging";
+import NavBar from "../nav/nav";
 
 const HomePage: React.FunctionComponent<IPage> = props => {
     useEffect(() => {

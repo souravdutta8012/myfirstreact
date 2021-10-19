@@ -1,6 +1,6 @@
 import IRouter from "../interfaces/route";
-import AboutPage from "../pages/about";
-import HomePage from "../pages/home";
+import AboutPage from "../pages/about/about";
+import HomePage from "../pages/home/home";
 
 const routers: IRouter[] = [
     {

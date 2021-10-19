@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter, Route, Switch, RouteComponentProps } from "react-router-dom";
 import logging from "./config/logging";
 import routers from "./config/routers"
+import "./application.css"
 
 const Application: React.FunctionComponent<{}> = props => {
     useEffect(() => {
