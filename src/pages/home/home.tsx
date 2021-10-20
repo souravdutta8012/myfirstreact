@@ -14,7 +14,9 @@ const HomePage: React.FunctionComponent<IPage> = props => {
         <>
             <NavBar />
             <SideBar />
-            <p>This is the home page!</p>
+            <div>
+                This is the home page!
+            </div>
         </>
     )
 }
