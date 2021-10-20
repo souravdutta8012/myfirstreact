@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import IPage from "../../interfaces/page";
 import logging from "../../config/logging";
 import NavBar from "../nav/nav";
+import SideBar from "../sidebar/sidebar";
+import "./home.css"
 
 const HomePage: React.FunctionComponent<IPage> = props => {
     useEffect(() => {
@@ -11,6 +13,7 @@ const HomePage: React.FunctionComponent<IPage> = props => {
     return (
         <>
             <NavBar />
+            <SideBar />
             <p>This is the home page!</p>
         </>
     )

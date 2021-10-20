@@ -3,6 +3,7 @@ import IPage from "../../interfaces/page";
 import logging from "../../config/logging";
 import { RouteComponentProps, withRouter } from "react-router";
 import { Link } from "react-router-dom";
+import "./about.css"
 
 const AboutPage: React.FunctionComponent<IPage & RouteComponentProps<any>> = props => {
     const [message, setMessage] = useState<string>('');
