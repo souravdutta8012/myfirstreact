@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
+import "./application.css";
 import { BrowserRouter, Route, Switch, RouteComponentProps } from "react-router-dom";
 import logging from "./config/logging";
 import routers from "./config/routers";
-import "./application.css";
 import 'typeface-roboto';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

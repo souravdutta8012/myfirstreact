@@ -1,10 +1,17 @@
 import IRouter from "../interfaces/route";
-import AboutPage from "../pages/about/about";
+import LandingPage from "../pages/landing/landing";
 import HomePage from "../pages/home/home";
+import AboutPage from "../pages/about/about";
 
 const routers: IRouter[] = [
     {
         path: '/',
+        name: 'Landing page',
+        component: LandingPage,
+        exact: true
+    },
+    {
+        path: '/home',
         name: 'Home page',
         component: HomePage,
         exact: true
