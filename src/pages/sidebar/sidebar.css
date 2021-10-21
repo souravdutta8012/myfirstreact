@@ -1,7 +1,13 @@
 .sidebar {
+    display: flex;
+    justify-content: center;
     position: fixed;
     background-color: #00354D;
     color: #84C1DC;
     width: 5rem;
     height: 100%;
+}
+
+li {
+    padding: 20px;
 }
