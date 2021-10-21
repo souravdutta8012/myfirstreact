@@ -6,7 +6,18 @@ const SideBar: React.FunctionComponent = props => {
     return (
         <>
             <div className='sidebar'>
-                SIDEBAR
+                <ul>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                </ul>
             </div>
         </>
     )
