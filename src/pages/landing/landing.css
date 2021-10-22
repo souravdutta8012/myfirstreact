@@ -1,11 +1,48 @@
-.cover {
-    height: 100vh;
-    background: linear-gradient(0deg, rgba(28, 28, 28, 0.81) 0%, rgba(85, 85, 85, 0) 100%);
-}
-
 .bg-img {
     position: absolute;
     z-index: -10;
     height: 100vh;
     width: 100vw;
+}
+
+.cover {
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(28, 28, 28, 0.81) 0%, rgba(85, 85, 85, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 40vh;
+    width: 30vw;
+    border: none !important;
+}
+
+.navbar {
+    padding: 40px;
+    width: auto;
+    background-color: #4C4C4E;
+    color: white;
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+}
+
+.card-content {
+    font-size: 14px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
