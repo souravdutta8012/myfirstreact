@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { Box, Grid } from "@mui/material";
 import axios from "axios";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHashtag } from "@fortawesome/pro-regular-svg-icons";
+import { faClock, faCircleCheck } from "@fortawesome/pro-solid-svg-icons";
 
 export default function HomePage() {
     const [todo, SetTodo] = useState([]);
@@ -13,23 +16,29 @@ export default function HomePage() {
     }, []);
 
     return (
-        <Box className="p-4">
-            <Grid container spacing={2}>
+        <Box className="pt-10 pl-5 pr-5 pb-5">
+            <Grid container spacing={4}>
                 {todo?.length ?
                     (todo.map((item: any) => {
                         return (
                             <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
-                                <Box className="bg-blue-100 rounded p-4">
+                                <Box className="bg-blue-100 rounded border-2 min-h-full p-4">
                                     <Box>
-                                        <Box>
-                                            {item?.id}
+                                        <Box className="flex justify-between pb-4">
+                                            <Box className="text-blue-500 font-semibold">
+                                                <FontAwesomeIcon icon={faHashtag} />&nbsp;
+                                                {item?.id}
+                                            </Box>
+                                            <Box>
+                                                {item?.completed ?
+                                                    (<FontAwesomeIcon icon={faCircleCheck} size="lg" className="text-green-700" />)
+                                                    : (<FontAwesomeIcon icon={faClock} size="lg" className="text-yellow-500" />)}
+                                            </Box>
                                         </Box>
-                                        <Box>
+                                        <Box className="font-medium text-gray-700">
                                             {item?.title}
                                         </Box>
-                                        <Box>
-                                            {item?.completed ? "Completed" : "Incomplete"}
-                                        </Box>
+
                                     </Box>
                                 </Box>
                             </Grid>
