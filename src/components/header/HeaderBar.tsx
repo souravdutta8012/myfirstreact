@@ -1,8 +1,8 @@
-import { AppBar, Box, InputAdornment, TextField } from "@mui/material"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars } from "@fortawesome/pro-solid-svg-icons"
-import { faMagnifyingGlass, faArrowRight } from "@fortawesome/pro-regular-svg-icons"
-import { faCircleUser } from "@fortawesome/pro-duotone-svg-icons"
+import { AppBar, Box, InputAdornment, TextField } from "@mui/material";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/pro-solid-svg-icons";
+import { faMagnifyingGlass, faArrowRight } from "@fortawesome/pro-regular-svg-icons";
+import { faCircleUser } from "@fortawesome/pro-duotone-svg-icons";
 
 export default function HeaderBar() {
     return (
@@ -20,7 +20,7 @@ export default function HeaderBar() {
                     <TextField
                         variant="standard"
                         className="pl-5 pr-5 pt-2 pb-2 bg-gray-100 rounded-full"
-                        placeholder="Search here .."
+                        placeholder="Search here"
                         InputProps={{
                             startAdornment:
                                 <InputAdornment position="start">
