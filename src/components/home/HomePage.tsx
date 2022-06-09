@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Box, Grid } from "@mui/material";
+import { Box, CircularProgress, Grid } from "@mui/material";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHashtag } from "@fortawesome/pro-regular-svg-icons";
@@ -38,13 +38,16 @@ export default function HomePage() {
                                         <Box className="font-medium text-gray-700">
                                             {item?.title}
                                         </Box>
-
                                     </Box>
                                 </Box>
                             </Grid>
                         );
                     }))
-                    : null}
+                    : (
+                        < Grid item xs={12} className="flex items-center">
+                            <CircularProgress />
+                        </Grid>
+                    )}
             </Grid>
         </Box>
     )
