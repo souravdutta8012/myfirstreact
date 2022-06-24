@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Box, CircularProgress, Grid } from "@mui/material";
+import { Box, Grid, Skeleton } from "@mui/material";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHashtag } from "@fortawesome/pro-regular-svg-icons";
@@ -7,6 +7,7 @@ import { faClock, faCircleCheck } from "@fortawesome/pro-solid-svg-icons";
 
 export default function HomePage() {
     const [todo, SetTodo] = useState([]);
+    const loadingTodo = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
     useEffect(() => {
         axios.get('https://jsonplaceholder.typicode.com/todos')
@@ -43,11 +44,21 @@ export default function HomePage() {
                             </Grid>
                         );
                     }))
-                    : (
-                        < Grid item xs={12} className="flex items-center">
-                            <CircularProgress />
-                        </Grid>
-                    )}
+                    : (loadingTodo.map((item: any) => {
+                        return (
+                            <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+                                <Box className="bg-blue-100 rounded border-2 min-h-full p-4">
+                                    <Box className="flex justify-between pb-2">
+                                        <Skeleton variant="circular" width={30} height={30} />
+                                        <Skeleton variant="circular" width={30} height={30} />
+                                    </Box>
+                                    <Skeleton variant="text" height={15} />
+                                    <Skeleton variant="text" height={15} />
+                                    <Skeleton variant="text" height={15} width="60%" />
+                                </Box>
+                            </Grid>
+                        );
+                    }))}
             </Grid>
         </Box>
     )
