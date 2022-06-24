@@ -23,7 +23,7 @@ export default function HomePage() {
                     (todo.map((item: any) => {
                         return (
                             <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
-                                <Box className="bg-blue-100 rounded border-2 min-h-full p-4">
+                                <Box className="bg-blue-100 rounded border-2 min-h-full drop-shadow-md p-4">
                                     <Box>
                                         <Box className="flex justify-between pb-4">
                                             <Box className="text-blue-500 font-semibold">
@@ -47,11 +47,12 @@ export default function HomePage() {
                     : (loadingTodo.map((item: any) => {
                         return (
                             <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
-                                <Box className="bg-blue-100 rounded border-2 min-h-full p-4">
+                                <Box className="bg-blue-100 rounded border-2 min-h-full drop-shadow-md p-4">
                                     <Box className="flex justify-between pb-2">
-                                        <Skeleton variant="circular" width={30} height={30} />
-                                        <Skeleton variant="circular" width={30} height={30} />
+                                        <Skeleton variant="circular" width={20} height={20} />
+                                        <Skeleton variant="circular" width={20} height={20} />
                                     </Box>
+                                    <Skeleton variant="text" height={15} />
                                     <Skeleton variant="text" height={15} />
                                     <Skeleton variant="text" height={15} />
                                     <Skeleton variant="text" height={15} width="60%" />
