@@ -19,7 +19,7 @@ export default function HomePage() {
 
     return (
         <Box className="pt-10 pl-5 pr-5 pb-5">
-            <DrawerMenu open={false} />
+            <DrawerMenu open={true} />
             <Grid container spacing={4}>
                 {todo?.length ?
                     (todo.map((item: any) => {
