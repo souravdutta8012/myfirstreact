@@ -2,7 +2,7 @@ import { AppBar, Box, InputAdornment, TextField } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/pro-solid-svg-icons";
 import { faMagnifyingGlass, faArrowRight } from "@fortawesome/pro-regular-svg-icons";
-import { faCircleUser } from "@fortawesome/pro-duotone-svg-icons";
+import profilePicture from '../../asset/picture/Sourav.png';
 
 export default function HeaderBar() {
     return (
@@ -36,7 +36,7 @@ export default function HeaderBar() {
                 </Box>
                 <Box className="flex items-center">
                     <Box className="mr-4">
-                        <FontAwesomeIcon icon={faCircleUser} size="3x" />
+                        <img className="object-cover object-top h-14 w-14 rounded-full" src={profilePicture} alt="profilePicture" />
                     </Box>
                     <Box className="flex flex-col items-center">
                         <Box className="text-sm">
