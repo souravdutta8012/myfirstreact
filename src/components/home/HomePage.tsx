@@ -4,6 +4,7 @@ import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHashtag } from "@fortawesome/pro-regular-svg-icons";
 import { faClock, faCircleCheck } from "@fortawesome/pro-solid-svg-icons";
+import DrawerMenu from "../drawerMenu/DrawerMenu";
 
 export default function HomePage() {
     const [todo, SetTodo] = useState([]);
@@ -18,6 +19,7 @@ export default function HomePage() {
 
     return (
         <Box className="pt-10 pl-5 pr-5 pb-5">
+            <DrawerMenu open={false} />
             <Grid container spacing={4}>
                 {todo?.length ?
                     (todo.map((item: any) => {
